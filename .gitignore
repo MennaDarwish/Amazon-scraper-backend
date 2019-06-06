@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.DS_Store
+*.pyc
+amazon_scraper/**/migrations/
+.idea/*
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+media/
+Pipfile
+Pipfile.lock
+provis.sh
+.coverage
