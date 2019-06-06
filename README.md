@@ -23,3 +23,13 @@ Install the required python libraries for local development
 ```
 pip install -r requirements/local.txt
 ```
+
+## Create the database tables
+```
+python manage.py migrate
+```
+
+## Run server
+```
+python manage.py runserver
+```
