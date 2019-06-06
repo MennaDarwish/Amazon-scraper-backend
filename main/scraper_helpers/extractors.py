@@ -3,7 +3,7 @@ xpath_sale_price = '//span[contains(@id,"ourprice") or contains(@id,"saleprice")
 xpath_original_price = '//td[contains(text(),"List Price") or contains(text(),"M.R.P") or contains(text(),"Price")]/following-sibling::td/text()'
 xpath_category = '//div[@id="wayfinding-breadcrumbs_feature_div"]//ul/li[last()]//text()'
 xpath_dimension = '//td[contains(text(),"Product Dimensions")]/following-sibling::td/text()'
-xpath_img = '//div[@id="main-image-container"]//ul/li[//img]//@src'
+xpath_img = '//div[@id="main-image-container"]//ul/li/span//div/img[@id="landingImage"]/@src'
 xpath_rank_numbers = '//tr[@id="SalesRank"]/td[@class="value"]/ul/li[@class="zg_hrsr_item"]//span[@class="zg_hrsr_rank"]/text()'
 xpath_rank_categories = '//tr[@id="SalesRank"]/td[@class="value"]/ul/li/span/a/text()'
 xpath_rank = '//tr[@id="SalesRank"]/td[@class="value"]/ul'

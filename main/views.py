@@ -18,6 +18,6 @@ class ProductList(viewsets.ViewSet):
         except Product.DoesNotExist:
             response = make_request(pk)
             product = parse_response(response, pk)
-            # save_product(product)
+            save_product(product)
 
         return Response(product)

@@ -5,7 +5,6 @@ from lxml import html
 from main.scraper_helpers.extractors import *
 from main.scraper_helpers import config
 from main.models import Product
-from bs4 import BeautifulSoup
 
 
 def get_product_url(asin):
@@ -51,17 +50,14 @@ def make_request(asin):
     try:
         response = requests.get(url, headers=headers)
     except RequestException as e:
-        print ("except", e)
+        print ("RequestException", e)
         make_request(asin)
 
     if response.status_code != 200:
         return None
 
     else:
-        print(response)
-        print(BeautifulSoup(response.text), response.text)
         tree = html.fromstring(response.content)
-        # tree = BeautifulSoup(response.text)
         return tree
 
     return response
