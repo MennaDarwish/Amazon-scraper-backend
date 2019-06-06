@@ -21,7 +21,7 @@ source env/bin/activate
 Install the required python libraries for local development
 
 ```
-pip install -r requirements/local.txt
+pip install -r requirements.txt
 ```
 
 ## Create the database tables
