@@ -47,6 +47,6 @@ def get_product_rank(tree):
     rank = ""
     for i in range(len(raw_rank_numbers)):
         rank += "%s %s" % (raw_rank_numbers[i], raw_rank_categories[i])
-        if (i != len(raw_rank_numbers)):
-            rank += ','
+        if (i != (len(raw_rank_numbers) - 1)):
+            rank += ', '
     return rank if len(raw_rank_numbers) > 0 else None
