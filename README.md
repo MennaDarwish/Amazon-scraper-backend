@@ -26,6 +26,9 @@ pip install -r requirements/local.txt
 
 ## Create the database tables
 ```
+python manage.py makemigrations
+```
+```
 python manage.py migrate
 ```
 
