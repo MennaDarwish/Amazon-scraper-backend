@@ -8,7 +8,7 @@ This repository contains the server for scraping amazon data
 Clone the repository
 
 ```
-git clone https://github.com/MennaDarwish/jungle-scout-task-BE.git
+https://github.com/MennaDarwish/Amazon-scraper-backend.git
 ```
 
 Set up and activate a python v3 environment
