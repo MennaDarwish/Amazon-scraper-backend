@@ -1,4 +1,4 @@
-# jungle-scout-task-BE
+# Amazon-scraper-backend
 
 
 This repository contains the server for scraping amazon data
